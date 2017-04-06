@@ -19,11 +19,12 @@ function flowRemoveTypesTransformFactory(app) {
 
 		if (result !== source) {
 			app.resources.push({
+				content: source,
+				file,
 				id: `flow-remove-types/${resolved.pattern.id}`,
 				pattern: resolved.pattern.id,
-				type: 'js.flow',
 				reference: false,
-				content: source
+				type: 'js.flow'
 			});
 
 			file.buffer = result;
