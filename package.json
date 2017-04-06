@@ -13,7 +13,8 @@
     "watch": "npm run build -- --watch",
     "lint": "xo",
     "predeps": "npm run build",
-    "deps": "dependency-check . && dependency-check . --extra --no-dev"
+    "deps": "dependency-check . && dependency-check . --extra --no-dev --i xo --i babel-preset-env",
+    "prepublish": "npm test && npm run build"
   },
   "babel": {
     "presets": [
