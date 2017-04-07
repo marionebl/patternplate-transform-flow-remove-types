@@ -1,6 +1,6 @@
 {
   "name": "patternplate-transform-flow-remove-types",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Remove flow types from js files and produce them as patternplate side effect",
   "files": [
     "index.js"
