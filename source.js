@@ -15,7 +15,7 @@ function flowRemoveTypesTransformFactory(app) {
 
 		const resolved = await resolve(sourceFile, null, app.configuration.transforms['resolve-imports'], true);
 		const source = resolved.buffer.toString('utf-8');
-		const result = remove(source).toString();
+		const result = remove(file.buffer.toString('utf-8')).toString();
 
 		if (result !== source) {
 			app.resources.push({
